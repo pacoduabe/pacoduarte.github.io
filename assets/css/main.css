@@ -380,11 +380,6 @@ body.light-theme{
     background-color: var(--hover-light-color);
 }
 
-.article:hover .article-title{
-    color: var(--hover-light-color);
-}
-
-
 .article-data{
     display: flex;
     align-items: center;
@@ -1022,10 +1017,12 @@ body.light-theme{
 }
 
 .panel-text{
-
-    margin-top: 1rem;
-    margin-bottom: 1rem;
     font-size: var(--font-size-sm);
+    color: var(--light-color);
+}
+
+.panel-text:hover{
+    color: var(--light-color-alt);
 }
 
 .accordion:after {
