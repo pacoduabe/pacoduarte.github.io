@@ -111,6 +111,16 @@ body.light-theme{
 .screen-sm-hidden{
     display: none;
 }
+
+li.space {
+    margin-top: 1rem;
+}
+
+li.space:last-child {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
 /* Header */
 .header{
     background-color: var(--secondary-background-color);
