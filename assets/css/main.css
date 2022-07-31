@@ -1028,19 +1028,5 @@ body.light-theme{
     font-size: var(--font-size-sm);
 }
 
-.accordion:after {
-    font-family: "remixicon";
-    font-size: var(--font-size-md);
-    content: "\ea12"; /* Unicode character for "plus" sign (+) */
-    float: right;
-    margin-left: 5px;
-    
-}
-
-.active:after {
-    font-family: "remixicon";
-    font-size: var(--font-size-md);
-    content: "\f1af"; /* Unicode character for "minus" sign (-) */
-}
 
 
