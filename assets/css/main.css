@@ -3,7 +3,7 @@
 /* Remix icons */
 @font-face {
     font-family: "remixicon";
-    src: url('remixicon.eot?t=1590207869815'); /* IE9*/
+    src: url('https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css'); /* IE9*/
     font-display: swap;
 }
 
