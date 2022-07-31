@@ -1,5 +1,18 @@
 /* Import font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+/* Remix icons */
+@font-face {
+    font-family: "remixicon";
+    src: url('remixicon.eot?t=1590207869815'); /* IE9*/
+    src: url('remixicon.eot?t=1590207869815#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url("remixicon.woff2?t=1590207869815") format("woff2"),
+    url("remixicon.woff?t=1590207869815") format("woff"),
+    url('remixicon.ttf?t=1590207869815') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+    url('remixicon.svg?t=1590207869815#remixicon') format('svg'); /* iOS 4.1- */
+    font-display: swap;
+}
+
+
 
 /* Custom properties */
 :root{
@@ -91,6 +104,11 @@ body.light-theme{
     display: inline-flex;
     align-items: center;
     justify-content: center;
+}
+
+.margin{
+    margin-left: 3rem;
+    margin-right: 3rem;
 }
 
 .section:not(.featured-articles){
@@ -594,7 +612,7 @@ body.light-theme{
 /* Categories page */
 .categories-content{
     grid-template-columns: 5rem repeat(7, 1fr) 5rem;
-    grid-template-rows: 10rem 1fr;
+    grid-template-rows: 1fr;
 }
 
 .author-categories{
@@ -817,6 +835,11 @@ body.light-theme{
     .author{
         grid-template-columns: 25rem 1fr;
     }
+
+    .title-page{
+        grid-column: 1/-1;
+        grid-row: 1/1;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -827,8 +850,13 @@ body.light-theme{
     }
 
     .about-content{
-        grid-template-columns: 1;
+        grid-template-columns: 1fr;
         grid-template-rows: 10rem repeat(2, 1fr);
+    }
+
+    .categories-content{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
     }
 
     .author-image{
@@ -924,6 +952,16 @@ body.light-theme{
         grid-template-columns: repeat(5, 1fr);
     }
 
+    .about-content{
+        grid-template-columns: 5rem repeat(7, 1fr) 5rem;
+        grid-template-rows: 10rem 1fr;
+    }
+
+    .categories-content{
+        grid-template-columns: 5rem repeat(7, 1fr) 5rem;
+        grid-template-rows: 1fr;
+    }
+
     .company-data{
         grid-column: span 2;
     }
@@ -950,18 +988,13 @@ body.light-theme{
         grid-row: 2/2;
     }
 
-    .about-content{
-        grid-template-columns: 5rem repeat(7, 1fr) 5rem;
-        grid-template-rows: 10rem 1fr;
-    }
-
     .author-image{
         position: relative;
         height: 52rem;
         padding-bottom: 5rem;
         object-fit: cover;
     }
-    
+
 }
 
 @media screen and (min-width: 1200px) {
@@ -969,13 +1002,11 @@ body.light-theme{
         grid-template-columns: repeat(2, 1fr);
     }
 }
-/* Acordiong */
+/* Accordions */
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
-    background-color: #eee;
-    color: #444;
     cursor: pointer;
-    padding: 18px;
+    padding: 1.5rem;
     width: 100%;
     text-align: left;
     border: none;
@@ -983,28 +1014,44 @@ body.light-theme{
     transition: 0.4s;
 }
 
+.accordion-title {
+    font-size: var(--font-size-sm);
+}
+
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .accordion:hover {
-    background-color: #ccc;
+    background-color: var(--secondary-background-color);
 }
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
-    padding: 0 18px;
-    background-color: white;
+    padding: 0 3rem;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+    vertical-align: text-top;
+}
+
+.panel-text{
+
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: var(--font-size-sm);
 }
 
 .accordion:after {
-    content: '\02795'; /* Unicode character for "plus" sign (+) */
-    font-size: 13px;
-    color: #777;
+    font-family: "remixicon";
+    font-size: var(--font-size-md);
+    content: "\ea12"; /* Unicode character for "plus" sign (+) */
     float: right;
     margin-left: 5px;
+    
 }
 
 .active:after {
-    content: "\2796"; /* Unicode character for "minus" sign (-) */
+    font-family: "remixicon";
+    font-size: var(--font-size-md);
+    content: "\f1af"; /* Unicode character for "minus" sign (-) */
 }
+
+
