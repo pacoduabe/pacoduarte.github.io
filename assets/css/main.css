@@ -1006,6 +1006,7 @@ li.space:last-child {
     border: none;
     outline: none;
     transition: 0.4s;
+    border-bottom: 1.5px solid var(--light-color);
 }
 
 .accordion-title {
