@@ -1,11 +1,7 @@
 /* Import font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 /* Remix icons */
-@font-face {
-    font-family: "remixicon";
-    src: url('https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css'); /* IE9*/
-    font-display: swap;
-}
+
 
 /* Custom properties */
 :root{
