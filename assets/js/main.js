@@ -31,6 +31,15 @@ const toggleMenu = () =>{
 
 menuToggleIcon.addEventListener('click', toggleMenu);
 
+document.onclick = function(e){
+    if(e.target.id !== '3-line-button' && e.target.id !== 'back-menu'){
+        console.log(e.target.id)
+        const mobileMenu = selectElement('#menu');
+        mobileMenu.classList.remove('activated');
+        menuToggleIcon.classList.remove('activated');
+    }
+};
+
 // Open/Close search form popup
 formOpenBtn.addEventListener('click', () => searchContainer.classList.add('activated'));
 formCloseBtn.addEventListener('click', () => searchContainer.classList.remove('activated'));
@@ -89,7 +98,7 @@ const swiper = new Swiper(".swiper", {
     }   
 });
 
-// Acordiong
+// Accordion
 var acc = document.getElementsByClassName("accordion");
 var i;
 
