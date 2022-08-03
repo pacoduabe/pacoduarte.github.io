@@ -1030,6 +1030,7 @@ li.space:last-child {
 .panel-text{
     font-size: var(--font-size-sm);
     color: var(--light-color);
+    text-decoration: underline;
 }
 
 .panel-text:hover{
