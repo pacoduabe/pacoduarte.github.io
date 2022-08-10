@@ -1,3 +1,4 @@
+<!-- about.html-->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -5,34 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paco Duarte Tech blog | Home</title>
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon.png">
     <!-- Remix icons -->
     <link height="32" width="32" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-    <!-- Swiper.js styles -->
-    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css"/>
     <!-- Custom styles -->
-    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
 </head>
 <body>
-    
     <!-- Header -->
     <header class="header" id="header">
 
         <nav class="navbar container">
-            <a href="./index.html">
+            <a href="../index.html">
                 <h2 class="logo">Paco's Tech blog</h2>
             </a>
 
             <div class="menu" id="menu">
                 <ul class="list" id="back-menu">
                     <li class="list-item">
-                        <a href="./index.html" class="list-link current">Home</a>
+                        <a href="../index.html" class="list-link">Home</a>
                     </li>
                     <li class="list-item">
                         <a href="./content.html" class="list-link">Content</a>
                     </li>
                     <li class="list-item">
-                        <a href="./about.html" class="list-link">About</a>
+                        <a href="./about.html" class="list-link current">About</a>
                     </li>
                 </ul>
             </div>
@@ -79,103 +77,47 @@
 
     </div>
 
-    <!-- Categories -->
+    <!-- About text -->
     <section class="about-articles  page-header-offset">
 
         <div class="container d-grid">
 
             <div class="about-content d-grid">
 
-                <h2 class="title-page place-items-center">Content</h2>
+                <h2 class="title-page place-items-center">About me</h2>
+
+                <a class="article author-image place-items-center">
+                    <img src="../assets/images/author/author.jpg" alt="" class="author-image place-items-center">
+                </a>
+
+                <div class="author-text">
+                    <h2 class="author-name">Paco Duarte</h2>
+                    <p>Hello!</p>
+                    <p>I made this blog in order to explain some of the hurdles I have faced throughout my professional career and how to deal with them.
+                    There will be also some personal projects that I find interesting and some non-tech content.
+                    </p>
+                    <br>
+                    <p>If you want to reach me, check my socials below.</p>
+                    <ul class="about-list social-media-about place-items-center">
+                        <li class="list-item">
+                            <a href="https://www.linkedin.com/in/fjduabe" target="_blank" rel="noopener noreferrer"
+                            class="list-link"><i class="ri-2x ri-linkedin-fill"></i></a>
+                        </li>
+                        <li class="list-item">
+                            <a href="https://twitter.com/pacoduabe" target="_blank" rel="noopener noreferrer"
+                            class="list-link"><i class="ri-2x ri-twitter-fill"></i></a>
+                        </li>
+                        <li class="list-item">
+                            <a href="https://www.youtube.com/channel/UCK5OULn94czoSMRsqOMDy4g" target="_blank" rel="noopener noreferrer"
+                            class="list-link"><i class="ri-2x ri-youtube-fill"></i></a>
+                        </li>
+                    </ul>
+                </div>
 
             </div>
-
-            <h2 class="title section-title" data-name="Category menu">Category menu</h2>
             
         </div>
 
-        <div class="container d-grid">
-
-            <button class="accordion title accordion-title">Data Modeling</button>        
-                <div class="panel">
-                    </ul>
-                        <li class="space"><a href="https://www.youtube.com/" class="panel-text">Articulo prueba 1</a></li>
-                        <li class="space"> <a href="https://www.linkedin.com/" class="panel-text">Articulo prueba 2</a> </li>
-                    </ul>
-                </div>
-
-            <button class="accordion title accordion-title">DAX</button>        
-                <div class="panel">
-                    </ul>
-                        <li class="space"><a href="https://www.youtube.com/" class="panel-text">Articulo prueba 1</a></li>
-                        <li class="space"> <a href="https://www.linkedin.com/" class="panel-text">Articulo prueba 2</a> </li>
-                    </ul>
-                </div>
-                
-
-            <button class="accordion title accordion-title">Power Query</button>        
-                <div class="panel">
-                    </ul>
-                        <li class="space"><a href="https://www.youtube.com/" class="panel-text">Articulo prueba 1</a></li>
-                        <li class="space"> <a href="https://www.linkedin.com/" class="panel-text">Articulo prueba 2</a> </li>
-                    </ul>
-                </div>
-
-            <button class="accordion title accordion-title">PBI Visual</button>        
-                <div class="panel">
-                    </ul>
-                        <li class="space"><a href="https://www.youtube.com/" class="panel-text">Articulo prueba 1</a></li>
-                        <li class="space"> <a href="https://www.linkedin.com/" class="panel-text">Articulo prueba 2</a> </li>
-                    </ul>
-                </div>
-                
-        </div>
-
-    </section>
-
-    <!-- Popular tags -->
-    <section class="about-articles section page-header-offset">
-
-        <div class="container">
-
-            <h2 class="title section-title" data-name="Popular tags">Popular tags</h2>
-
-            <div class="popular-tags-container d-grid">
-
-                <a href="#" class="article">
-                    <span class="tag-name place-items-center">#Data model</span>
-                    <img src="./assets/images/tags/data-model.jpg" alt="" class="article-image">
-                </a>
-
-                <a href="#" class="article">
-                    <span class="tag-name place-items-center">#PBI Visual</span>
-                    <img src="./assets/images/tags/pbi-visuals.jpg" alt="" class="article-image">
-                </a>
-
-                <a href="#" class="article">
-                    <span class="tag-name place-items-center">#Power Query
-                    </span>
-                    <img src="./assets/images/tags/power-query.jpg" alt="" class="article-image">
-                </a>
-
-                <a href="#" class="article">
-                    <span class="tag-name place-items-center">#DAX</span>
-                    <img src="./assets/images/tags/dax.jpg" alt="" class="article-image">
-                </a>
-
-                <a href="#" class="article">
-                    <span class="tag-name place-items-center">#SQL</span>
-                    <img src="./assets/images/tags/sql.jpg" alt="" class="article-image">
-                </a>
-
-                <a href="#" class="article">
-                    <span class="tag-name place-items-center">#Productivity</span>
-                    <img src="./assets/images/tags/productivity.jpg" alt="" class="article-image">
-                </a>
-
-            </div>
-
-        </div>
     </section>
 
     <!-- Footer -->
@@ -256,9 +198,7 @@
         
     </footer>
 
-    <!-- Swiper.js -->
-    <script src="./assets/js/swiper-bundle.min.js"></script>
     <!-- Custom script -->
-    <script src="./assets/js/main.js"></script>
+    <script src="../assets/js/main.js"></script>
 </body>
 </html>

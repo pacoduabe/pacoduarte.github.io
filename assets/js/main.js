@@ -33,7 +33,6 @@ menuToggleIcon.addEventListener('click', toggleMenu);
 
 document.onclick = function(e){
     if(e.target.id !== '3-line-button' && e.target.id !== 'back-menu'){
-        console.log(e.target.id)
         const mobileMenu = selectElement('#menu');
         mobileMenu.classList.remove('activated');
         menuToggleIcon.classList.remove('activated');
@@ -70,34 +69,6 @@ themeToggleBtn.addEventListener('click', function () {
     }
 });
 
-// Swiper
-const swiper = new Swiper(".swiper", {
-    // How many slides to show
-    slidesPerView: 1,
-    // How much space between slides
-    spaceBetween: 20,
-    // Make the next and previous buttons work
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-    // Make the pagination indicators work
-    pagination: {
-        el: '.swiper-pagination'
-    },
-    //Responsive breakpoints for how many slides to show at that view
-    breakpoints: {
-        // 700px and up shoes 2 slides
-        700: {
-            slidesPerView: 2
-        },
-        // 1200px and up shoes 3 slides
-        1200: {
-            slidesPerView: 3
-        }
-    }   
-});
-
 // Accordion
 var acc = document.getElementsByClassName("accordion");
 var i;
@@ -117,3 +88,62 @@ for (i = 0; i < acc.length; i++) {
     }
     });
 }
+
+// Search Algorithm
+var KeyValues = '{"KeyValues":[' +
+'{"cardinality-test": ["cardinality", "relationship"] },' +
+'{"world-map": ["flowmap", "custom", "visual"] },' +
+'{"js-try": ["JS","javascript"] }]}';
+
+var Points = '{"Points":[' +
+'{"cardinality-test": 0 },' +
+'{"world-map": 0 },' +
+'{"js-try": 0 }]}';
+
+var jsonKeyValues = JSON.parse(KeyValues);
+var jsonPoints = JSON.parse(Points);
+
+var CurrentPost = "";
+var CurrentKeyword = "";
+
+
+
+// var temp = "This is a string.";
+// var count = (temp.match(/is/g) || []).length;
+// console.log(count);
+
+document.onclick = function(e){
+    
+    
+
+    
+
+    if(e.target.id !== '3-line-button' && e.target.id !== 'back-menu'){
+        var TestWord = "Cardinality";
+        let Result = TestWord.toLowerCase();
+
+        for (var i = 0; i < jsonKeyValues["KeyValues"].length; i++) {
+            let CurrentPost = Object.getOwnPropertyNames(jsonKeyValues["KeyValues"][i]).toString();
+
+            for (var j = 0; j < jsonKeyValues["KeyValues"][i][CurrentPost].length; j++) {
+                let CurrentKeyword = jsonKeyValues["KeyValues"][i][CurrentPost][j];
+                console.log(CurrentPost + " and " + CurrentKeyword);
+                
+            }
+        }
+        
+        
+        var a = fetch("http://127.0.0.1:62035/posts/post.html").then((result) => { return result.text(); });
+
+        console.log(" ");
+        console.log(a);
+
+        // console.log(" ")
+
+        // console.log(jsonKeyValues)
+        // console.log(jsonPoints)
+        // console.log(Result);
+    }
+};
+
+
