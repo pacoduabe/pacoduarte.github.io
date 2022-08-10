@@ -132,11 +132,22 @@ document.onclick = function(e){
             }
         }
         
-        
-        var a = fetch("http://127.0.0.1:62035/posts/post.html").then((result) => { return result.text(); });
+        var a = fetch("http://127.0.0.1:53574/posts/post.html").then((result) => { return result.text();});
+
+        getJobs = () =>
+            new Promise((resolve) => {
+            fetch("http://127.0.0.1:53574/posts/post.html").then((result) => { 
+            resolve(result.text());
+            });
+        });
+
+        renderJobs = async () => {
+            const jobs = await getJobs();
+        return jobs;
+        };
 
         console.log(" ");
-        console.log(a);
+        console.log(renderJobs());
 
         // console.log(" ")
 
