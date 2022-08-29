@@ -29,7 +29,7 @@
     --item-min-height-md: 30rem;
 }
 
-/* Base styles */
+/* Start Base styles */
 *{
     margin: 0;
     padding: 0;
@@ -73,6 +73,7 @@ button {
 i{
     font-size: var(--font-size-md);
 }
+/* End Base styles */
 
 /* Start Reusable classes */
 .container{
