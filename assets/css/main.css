@@ -96,6 +96,11 @@ i{
     font-size: var(--font-size-lg);
 }
 
+.justify-text{
+    text-align: justify;
+    text-justify: inter-word;
+}
+
 .container{
     max-width: 160rem;
     margin: 0 auto;
@@ -320,4 +325,11 @@ li.space:last-child {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+}
+
+
+.title-page{
+    font-size: var(--font-size-lg);
+    color: var(--light-color);
+    padding: 2rem;
 }
