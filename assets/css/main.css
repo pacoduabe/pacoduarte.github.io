@@ -229,6 +229,12 @@ li.space:last-child {
     background-color: var(--hover-light-color);
 }
 
+.list-link:hover,
+.btn:hover,
+.btn:hover span{
+    color: var(--light-color);
+}
+
 .article-data{
     display: flex;
     align-items: center;
@@ -276,6 +282,8 @@ li.space:last-child {
 
 
 
+
+
 /* About page */
 .author-about{
     padding: 1.5rem;
@@ -299,3 +307,20 @@ li.space:last-child {
     align-items: center;
     gap: 2.5rem;
 }
+
+
+.author-name{
+    color: var(--light-color);
+    font-weight: 400;
+}
+
+.author-text{
+    padding: 2.5rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+
