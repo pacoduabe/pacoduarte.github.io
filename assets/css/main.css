@@ -125,24 +125,6 @@ i{
     justify-content: center;
 }
 
-.margin{
-    margin-left: 3rem;
-    margin-right: 3rem;
-}
-
-.margin-top{
-    margin-top: 3rem;
-    padding: 10rem;
-}
-
-.margin-bottom{
-    margin-bottom: 1rem;
-}
-
-.padding{
-    padding: 1.5rem;
-}
-
 .d-grid{
     display: grid;
 }
@@ -186,14 +168,20 @@ li.space:last-child {
 
 .section-title{
     margin-top: 2.5rem;
+    margin-bottom: 1rem;
     color: var(--light-color);
+    padding: 1.5rem;
 }
 
 
 /* Start Footer */
 .footer{
     background-color: var(--secondary-background-color);
-    padding: 2rem;
+    padding: 3rem;
+}
+
+.margin-privacy{
+    margin-bottom: 1rem;
 }
 /* End Footer */
 
@@ -201,9 +189,10 @@ li.space:last-child {
 
 
 
-.section{
-    padding-block: 5rem;
+.section-top{
+    margin-top: 7.5rem;
 }
+
 .article-image{
     position: absolute;
     width: 100%;
@@ -297,6 +286,11 @@ li.space:last-child {
     gap: 1rem;
 }
 
+.about-content{
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
 .about-articles{
     padding-block: 2rem;
 }
@@ -328,8 +322,9 @@ li.space:last-child {
 }
 
 
-.title-page{
+.title-about{
     font-size: var(--font-size-lg);
     color: var(--light-color);
-    padding: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
