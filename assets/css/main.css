@@ -27,6 +27,7 @@
     --margin-md: 3rem;
     --item-min-height-sm: 20rem;
     --item-min-height-md: 30rem;
+    --item-min-height-xl: 40rem;
 }
 
 /* Start Base styles */
@@ -252,7 +253,7 @@ li.space:last-child {
 
 .recent-posts-article-image-wrapper,
 .recent-posts .article{
-    min-height: var(--item-min-height-sm);
+    min-height: var(--item-min-height-md);
 }
 
 .recent-posts .article{
